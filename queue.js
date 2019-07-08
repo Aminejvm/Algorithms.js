@@ -5,7 +5,8 @@ const createQueue = () => {
 	return {
 		//Add
 		add(item) {
-			return queue.unshift(item);
+			queue.unshift(item);
+			//add item to the beginning of an array.
 		},
 		//remove
 		remove() {
@@ -34,3 +35,5 @@ taskQueue.add('test test');
 console.log(taskQueue.peek());
 taskQueue.remove();
 console.log(taskQueue.peek());
+
+module.export = createQueue;
